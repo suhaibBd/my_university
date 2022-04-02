@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:my_university/model/university_model.dart';
 
@@ -32,16 +31,10 @@ class UniversityFromRepo extends UniversityRepo {
           .where((university) => university.name!.toLowerCase().contains(querySearchResult.toLowerCase()) ||
           university.domains!.where((domainSearchEnrty) => domainSearchEnrty.toLowerCase().contains(querySearchResult.toLowerCase())).toString().contains(querySearchResult.toLowerCase()))
           .toList();
-      
-      // results.addAll(jordanUniversities
-      //     .where((university) =>
-      //     university.domains.where((element) => element.toLowerCase().contains(querySearchResult.toLowerCase()))).toList());
-      
-       // university.domains!.where((domainSearchEnrty) => domainSearchEnrty.toLowerCase().contains(querySearchResult.toLowerCase()))
     }
     jordanUniversities = results;
-    // print(jordanUniversities.first.name);
     return jordanUniversities;
   }
+
 
 }

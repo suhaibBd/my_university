@@ -16,7 +16,7 @@ void main(){
              (context)=>UniversityBloc(UniversityInitialState(),UniversityFromRepo()
          )..add(UniversityRetirveEvent())),
        ],
-       child: const BasePage()),
+       child: const JordanUniversities()),
        debugShowCheckedModeBanner: false,
                 )));
 }
