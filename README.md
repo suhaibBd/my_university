@@ -12,8 +12,8 @@
  # webView (webview_flutter) package
  - if you click on card the web page url will send to web_pages screen and running as a webView
  # Bloc
- - in the beginning i used riverpod state management but i changed to bloc because 
-   i remember you are using bloc state management
+ - when JordanUniversities build method runs or is called, the bloc should retrieve data from api
+   fetched data will be displayed as a ListView, each item inside it as a card
  - university_bloc directory contains (Event,States,Repo,and bloc)
 
 
